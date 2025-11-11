@@ -1,49 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="We help marketing organisations, in-house agencies and creative operations redesign how work flows – blending automation, AI and operational design to deliver faster, leaner, more scalable ways of working.">
-    <meta name="keywords" content="intelligent transformation, operational design, workflow automation, marketing operations, AI for agencies, creative operations efficiency, process automation, operational AI">
-    <meta property="og:title" content="Intelligent Transformation Studio">
-    <meta property="og:description" content="Redesigning how creative and marketing operations get work done through AI and automation.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.intelligenttransformation.studio/">
-    <meta property="og:image" content="hero-graphic.png">
-    <meta property="og:image:alt" content="Abstract pattern representing flow of work and automation.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Intelligent Transformation Studio">
-    <meta name="twitter:description" content="Transforming how work gets done through intelligent automation and operational design.">
-    <meta name="twitter:image" content="hero-graphic.png">
+    <meta charset="utf-8">
+
+    <!-- Canonical and language -->
     <link rel="canonical" href="https://www.intelligenttransformation.studio/">
+    <link rel="alternate" href="https://www.intelligenttransformation.studio/" hreflang="en-GB">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Primary SEO -->
     <title>Intelligent Transformation Studio | Transforming How Work Gets Done</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="description" content="We help marketing organisations, in-house agencies and creative operations redesign how work flows – blending automation, AI and operational design to deliver faster, leaner, more scalable ways of working.">
+    <meta name="robots" content="index,follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Intelligent Transformation Studio">
+    <meta property="og:url" content="https://www.intelligenttransformation.studio/">
+    <meta property="og:title" content="Intelligent Transformation Studio | Transforming How Work Gets Done">
+    <meta property="og:description" content="We redesign how work flows – blending automation, AI and operational design so teams deliver faster without extra headcount.">
+    <meta property="og:image" content="https://www.intelligenttransformation.studio/assets/og-hero.jpg">
+    <meta property="og:image:alt" content="Abstract graphic symbolising streamlined workflow and automation">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Intelligent Transformation Studio | Transforming How Work Gets Done">
+    <meta name="twitter:description" content="Operational design + intelligent automation for creative and marketing operations.">
+    <meta name="twitter:image" content="https://www.intelligenttransformation.studio/assets/og-hero.jpg">
+
+    <!-- Favicons and PWA basics -->
+    <link rel="icon" href="https://www.intelligenttransformation.studio/assets/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="https://www.intelligenttransformation.studio/assets/favicon-192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="https://www.intelligenttransformation.studio/assets/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="theme-color" content="#0E2A3A">
+
+    <!-- Preload hints (keep only if these files exist) -->
+    <!-- <link rel="preload" href="/assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin> -->
+
+    <!-- Performance hygiene -->
+    <link rel="dns-prefetch" href="//www.intelligenttransformation.studio">
+    <link rel="preconnect" href="https://www.intelligenttransformation.studio" crossorigin>
+
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://www.intelligenttransformation.studio/#organization",
-        "name": "Intelligent Transformation Studio",
-        "url": "https://www.intelligenttransformation.studio/",
-        "logo": "https://www.intelligenttransformation.studio/logo.png",
-        "description": "We help marketing organisations redesign how work flows – blending automation, AI and operational design for faster, leaner delivery.",
-        "additionalType": "https://schema.org/AutomationConsulting",
-        "contactPoint": [{
-            "@type": "ContactPoint",
-            "contactType": "sales",
-            "email": "info@intelligenttransformation.studio",
-            "url": "https://www.intelligenttransformation.studio/#contact"
-        }]
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Intelligent Transformation Studio",
+      "url": "https://www.intelligenttransformation.studio/",
+      "logo": "https://www.intelligenttransformation.studio/assets/logo-mark.png",
+      "description": "Operational design and intelligent automation for marketing and creative operations.",
+      "areaServed": "GB",
+      "foundingDate": "2025",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "contactType": "enquiries",
+        "email": "hello@intelligenttransformation.studio",
+        "availableLanguage": ["en-GB"]
+      }]
     }
     </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Intelligent Transformation Studio",
+      "url": "https://www.intelligenttransformation.studio/"
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
-                <img src="logo.jpg" alt="Intelligent Transformation Studio logo – arrows forming a loop symbolising flow and efficiency." class="logo-image">
+                <img src="https://www.intelligenttransformation.studio/assets/logo-mark.png" alt="Intelligent Transformation Studio logo – arrows forming a loop symbolising flow and efficiency." class="logo-image" loading="lazy" decoding="async" width="320" height="320">
             </a>
             <div class="nav-links">
                 <a href="#what-we-do" class="nav-link">What We Do</a>
@@ -321,6 +356,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="/assets/app.js" defer></script>
 </body>
 </html>
